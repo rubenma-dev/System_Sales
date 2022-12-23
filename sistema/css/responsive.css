@@ -1,0 +1,127 @@
+@media screen and (max-width: 1000px)
+{
+	#container {
+	    padding: 45px 10px 10px;
+	}
+	.btnMenu{
+		display: block;
+	}
+	nav{
+		position: absolute;
+		width: 100%;
+		left: -100%;
+		transition: 0.5s all;
+	}
+	nav ul{
+		flex-direction: column;
+	}
+	nav ul li:hover ul{
+		display: none;
+	}
+	nav ul li{
+		width: 100%;
+		border-bottom: 1px solid #CCC;
+	}
+	nav ul li a{
+		text-align: left;
+		width: 100%;
+	}
+	nav li ul{
+		position: relative;
+		border-radius: 0;
+	}
+	nav li ul li:last-child{
+		border-radius: 0;
+	}
+	nav .principal .arrow{
+		float: right;
+	}
+	header h1{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 768px)
+{
+	.dashboard{
+		flex-wrap: wrap;
+	}
+	.dashboard a{
+		width: 50%;
+		border: 1px solid #CCC;
+	}
+	.containerDataUser, .containerDataEmpresa{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+	#container h1{
+		font-size: 12pt !important;
+	}
+	.logoUser, .logoEmpresa{
+		width: 150px;
+		height: 150px;
+	}
+
+	/* LISTA DE USUARIOS*/
+	.btn_new{
+		margin: 0;
+		margin-right: 10px;
+		padding: 5px 10px;
+		font-size: 8pt;
+	}
+	.form_search{
+		width: 100%;
+		margin-top: 10px;
+		border: 0;
+	}
+	.containerTable{
+		width: 100%;
+		border: 5px solid #CCC;
+		overflow: scroll;
+	}
+	table{
+		width: 850px;
+	}
+	table td, table th{
+		padding: 5px;
+		font-size: 10pt;
+	}
+	.form_register{
+		width: 100%;
+	}
+	form{
+		padding: 10px;
+	}
+	.btn_save{
+		width: 100%;
+		margin: 20px auto 15px auto;
+	}
+	.bodyModal{
+		padding: 10px;
+	}
+	.btn_new{
+		width: 124px;
+    	font-size: 12pt;
+    	border: 0;
+	}
+	.btnNewProducto, .btnNewVenta, .btn_new_cliente{
+		width: 140px;
+    	font-size: 8pt;
+	}
+
+}
+@media screen and (max-width: 460px)
+{
+	.dashboard a{
+		padding: 5px 2px;
+	}
+	.dashboard p{
+		font-size: 9pt;
+	}
+	.dashboard span{
+		font-size: 10pt;
+	}
+	.divDataUser label{
+		width: 80px;
+	}
+}
